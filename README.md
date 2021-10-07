@@ -1,10 +1,6 @@
-# Getting Started with Create React App
+# Getting to know my application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 
@@ -14,57 +10,21 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
-### `npm test`
+### Recommendations
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Considering that the design system was made to be a mobile interface, it's trully recommended to set the screen size to 375x812 by pressing F12 and setting to mobile view inside the developer options of your browser.
 
-### `npm run build`
+### Comments
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+First of all, I should start my comments by saying that I'm sorry, due to my routine, I've been really struggling to accomplish my obligations and have some free time, since i'm studying, working full time. But, I tryed to make my programming skill as clear as I could with the short time I had left.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Technical Considerations
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I chose to use some tools, such as styled components, material Ui (not entirely), handmade components, react router, axios, functional programming and various hooks. It was applyed some 'clean code' fundamentals, like unique responsability, searchble names and etc. To optimize the page performance, with a little more time, I would certainly use some memoization and code splitting. The architecture was idealized to attend some scalability standarts and have reusable components through the application. 
 
-### `npm run eject`
+The css settings were made to make the responsiveness better. Furthermore. due to have a better UX, I chose to have a loading spinner until the page is mounted and the props and states are built. There is some additional css setting to make the web visualization possible. 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+About the version control, I had the intention to simulate a developing enviroment on the git flow through the merges, pushs and branches.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I trully hope that you guys enjoy the coding sample :D

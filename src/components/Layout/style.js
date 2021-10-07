@@ -13,7 +13,7 @@ export const BottomBar = styled.div`
   height: 59px;
   padding: 10px;
   position: relative;
-  bottom: -30vh;
+  bottom: -35vh;
 `;
 
 export const BarContainer = styled.div`

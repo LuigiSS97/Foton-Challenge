@@ -8,6 +8,7 @@ import {
   ContentWrapper,
   Header,
   SearchInput,
+  SpinnerContainer,
   Subtitle,
   SubtitleWrapper,
   Title,
@@ -15,7 +16,7 @@ import {
   User,
   ViewAllButton,
 } from "./style";
-import { Snackbar } from "@material-ui/core";
+import { CircularProgress, Snackbar } from "@material-ui/core";
 import BookCard from "./components/BookCard";
 import Main from "../../components/Layout";
 import { useHistory } from "react-router";
@@ -25,6 +26,7 @@ const coverUrl =
 
 export default function Home() {
   const history = useHistory();
+  const [loading, setLoading] = useState(true);
   const [books, setBooks] = useState([]);
   const [error, setError] = useState(null);
   const [scroolableBooks, setScroolableBooks] = useState(false);
@@ -42,6 +44,7 @@ export default function Home() {
       const finalData = insertUrlImage(bookResponse.data.items);
 
       setBooks(finalData);
+      setLoading(false)
     } catch (error) {
       setError(error.response.data.message);
     }
@@ -56,6 +59,13 @@ export default function Home() {
     return data;
   }
 
+  if (loading) {
+    return (
+      <SpinnerContainer>
+        <CircularProgress />
+      </SpinnerContainer>
+    );
+  }
   return (
     <Container>
       <ContentContainer>

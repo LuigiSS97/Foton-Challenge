@@ -8,6 +8,15 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
 `;
+
+export const SpinnerContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
 export const ContentContainer = styled.body`
   max-width: 375px;
   width: 100%;

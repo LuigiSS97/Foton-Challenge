@@ -1,4 +1,5 @@
 import React from "react";
+import { useHistory } from "react-router";
 
 import {
   BarButton,
@@ -11,12 +12,14 @@ import {
 } from "./style";
 
 export default function Main({ children }) {
+  const history = useHistory()
+
   return (
     <Container>
       {children}
       <BottomBar>
         <BarContainer>
-          <BarButton>
+          <BarButton onClick={() => history.push("/")}>
             <HomeIcon size="20px" />
             Home
           </BarButton>

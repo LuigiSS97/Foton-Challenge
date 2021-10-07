@@ -18,9 +18,16 @@ export const ContentContainer = styled.body`
   height: 100%;
   background: url(${Oval3}) no-repeat 100% top;
   max-height: 812px;
-
+  
 `;
 
+export const SpinnerContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
 
 export const Header = styled.div`
   width: 100%;

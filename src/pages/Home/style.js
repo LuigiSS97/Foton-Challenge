@@ -11,7 +11,7 @@ export const Container = styled.div`
   justify-content: center;
 
 `;
-export const ContentContainer = styled.body`
+export const ContentContainer = styled.div`
   max-width: 375px;
   width: 100%;
   padding: 20px;

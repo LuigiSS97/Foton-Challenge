@@ -4,13 +4,29 @@ import Input from "../../components/Input";
 import Oval2 from "../../assets/Oval2.png";
 import Oval3 from "../../assets/Oval3.png";
 
-export const Container = styled.body`
+export const Container = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+
+`;
+export const ContentContainer = styled.body`
   max-width: 375px;
   width: 100%;
   padding: 20px;
   height: 100%;
-  background: url(${Oval3}) no-repeat 100% bottom;
+  background: url(${Oval3}) no-repeat 100% top;
+  max-height: 812px;
+  
+`;
 
+export const SpinnerContainer = styled.div`
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const Header = styled.div`
@@ -22,6 +38,12 @@ export const SearchInput = styled(Input)`
   background: #fdfcfc;
   border-radius: 10px;
   border: none !important;
+  opacity: 0.6;
+
+  :hover {
+    opacity: 1;
+    transition: all 0.5s;
+  }
 `;
 
 export const TitleWrapper = styled.div`
@@ -44,7 +66,9 @@ export const User = styled.p`
   font-weight: bold;
 `;
 
-export const ContentWrapper = styled.div``;
+export const ContentWrapper = styled.div`
+margin:  32px 0;
+`;
 
 export const SubtitleWrapper = styled.div`
 width: 100%;
@@ -70,7 +94,6 @@ export const BookCardContainer = styled.div`
   padding-top: 15px;
   display: flex;
   width: 100%;
-  position: fixed;
   justify-content: space-between;
   overflow-x: ${({scroolableBooks}) => (scroolableBooks ? "auto" : "hidden")};
 

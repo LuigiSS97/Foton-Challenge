@@ -35,10 +35,9 @@ export const Input = styled.input`
   font-size: 1.6rem;
   color: #495055;
   width: 100%;
-  border-radius: 8px;
-  border: 1px solid;
-  border-color: ${({ verified, hasRequiredError }) =>
-    verified ? "#B3B8BF" : hasRequiredError ? "red" : "#B3B8BF"};
+  border-radius: 10px;
+  border: 0px;
+  border-color: white;
 
   outline: none;
   padding: 8px 12px;
@@ -53,7 +52,7 @@ export const Input = styled.input`
 export const Label = styled.div`
   position: absolute;
   margin: 0;
-  color: ${({ verified }) => (verified ? "#46AB7A" : "#6c757d")};
+  color: #46AB7A;
   align-items: center;
   font-size: 1.6rem;
   top: 11px;

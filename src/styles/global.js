@@ -11,7 +11,6 @@ const GlobalStyle = createGlobalStyle`
     body {
         background-color: #fffcf9 ;
         --webkit-font-smooth: antialiased;
-        max-width: 375px;
   }
   html {
       
